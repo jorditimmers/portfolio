@@ -2,7 +2,16 @@
 module.exports = {
     content: ["./src/**/*.{js,jsx,ts,tsx}"],
     theme: {
-        extend: {},
+        extend: {
+            fontFamily: {
+                mplus: [
+                    "M PLUS Code Latin",
+                    "sans-serif",
+                    "ui-sans-serif",
+                    "system-ui",
+                ],
+            },
+        },
         colors: {
             text: {
                 50: "var(--text-50)",
