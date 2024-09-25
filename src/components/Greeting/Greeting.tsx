@@ -10,20 +10,15 @@ export default function Greeting() {
     const [animationActive, setAnimationActive] = useState<boolean>(true);
 
     const variants = {
-        hidden: { opacity: 0, scale: 0.8 },
+        hidden: { opacity: 0, scale: 0.3 },
         visible: {
             opacity: 1,
             scale: 1,
-            transition: {
-                duration: 1,
-                ease: "easeOut",
-                bounce: 0.3,
-            },
         },
     };
 
     return (
-        <div className="min-w-max min-h-screen text-center flex flex-col justify-between">
+        <div className="min-w-max min-h-screen text-center flex flex-col justify-between overflow-hidden">
             <div />
             <TextAnim
                 text={typingText}
@@ -33,10 +28,11 @@ export default function Greeting() {
                 className="flex flex-col justify-center items-center opacity-60"
                 key="find-out-more"
                 variants={variants}
+                transition={{ type: "spring", stiffness: 100 }}
                 animate={animationActive ? "hidden" : "visable"}
             >
-                <h4 className="font-light">FIND OUT MORE</h4>
-                <IoIosArrowDown className="size-10 mb-3" />
+                <h5 className="font-light">FIND OUT MORE</h5>
+                <IoIosArrowDown className="size-8 mb-3" />
             </motion.div>
         </div>
     );
