@@ -1,5 +1,5 @@
 import { motion, useMotionValue, useTransform, animate } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import CursorBlinker from "./CursorBlinker";
 
 interface TextAnimProps {
@@ -14,10 +14,10 @@ export default function TextAnim({ text, setAnimationActive }: TextAnimProps) {
         text.slice(0, 0)
     );
 
-    const handleAnimationEnd = () => {
+    const handleAnimationEnd = useCallback(() => {
         if (setAnimationActive) setAnimationActive(false);
         console.log("Animation ended");
-    };
+    }, [setAnimationActive]);
 
     useEffect(() => {
         const controls = animate(count, text.length, {
@@ -40,7 +40,7 @@ export default function TextAnim({ text, setAnimationActive }: TextAnimProps) {
         });
 
         return controls.stop;
-    }, [text, count, rounded]);
+    }, [text, count, rounded, handleAnimationEnd]);
 
     return (
         <span className="text-6xl font-bold space-y-6 min-h-64 flex items-center justify-center">
