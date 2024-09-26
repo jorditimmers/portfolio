@@ -27,7 +27,7 @@ export default function TextAnim({ text, setAnimationActive }: TextAnimProps) {
             onComplete: handleAnimationEnd,
         });
 
-        rounded.onChange((latest) => {
+        rounded.on("change", (latest) => {
             const slicedText = text.slice(0, latest);
             setDisplayText(
                 slicedText.split("\n").map((line, index) => (
@@ -43,9 +43,11 @@ export default function TextAnim({ text, setAnimationActive }: TextAnimProps) {
     }, [text, count, rounded]);
 
     return (
-        <span className="text-6xl font-bold space-y-6">
-            <motion.span>{displayText}</motion.span>
-            <CursorBlinker />
+        <span className="text-6xl font-bold space-y-6 min-h-64 flex items-center justify-center">
+            <motion.span>
+                {displayText}
+                <CursorBlinker />
+            </motion.span>
         </span>
     );
 }

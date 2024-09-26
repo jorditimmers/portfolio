@@ -11,6 +11,10 @@ module.exports = {
                     "system-ui",
                 ],
             },
+            aspectRatio: {
+                "4/3": "4 / 3",
+                "5/3": "5 / 3",
+            },
         },
         colors: {
             text: {
