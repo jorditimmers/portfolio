@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import ProfilePicture from "./profilepicture.jpeg";
 
 export default function Picture() {
     return (
@@ -12,7 +13,7 @@ export default function Picture() {
             <img
                 className="object-cover w-full h-full rounded-3xl aspect-4/3"
                 alt="Profile"
-                src="/profilepicture.jpeg"
+                src={ProfilePicture}
             />
         </motion.div>
     );
