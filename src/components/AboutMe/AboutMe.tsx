@@ -1,3 +1,4 @@
+import useDarkSide from "../../hooks/useDarkSide";
 import Bio from "./Bio";
 import GraduateCard from "./GraduateCard";
 import IconCard from "./IconCard";
@@ -17,11 +18,13 @@ export default function AboutMe() {
             <GraduateCard />
             <IconCard backgroundColor="secondary-400" render={<ReactLogo />} />
             <IconCard
+                darkModeBackgroundColorFull="dark:bg-background-600"
                 backgroundColor="background-900"
                 render={<AngularLogo />}
             />
             <IconCard backgroundColor="secondary-400" render={<JavaLogo />} />
             <IconCard
+                darkModeBackgroundColorFull="dark:bg-background-600"
                 backgroundColor="background-900"
                 render={<SpringLogo />}
             />
@@ -29,7 +32,11 @@ export default function AboutMe() {
                 backgroundColor="secondary-400"
                 render={<TailwindLogo />}
             />
-            <IconCard backgroundColor="background-900" render={<AwsLogo />} />
+            <IconCard
+                backgroundColor="background-900"
+                darkModeBackgroundColorFull="dark:bg-background-600"
+                render={<AwsLogo />}
+            />
         </div>
     );
 }

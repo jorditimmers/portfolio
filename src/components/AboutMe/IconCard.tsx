@@ -2,10 +2,15 @@ import { motion } from "framer-motion";
 
 interface IconCardProps {
     backgroundColor?: string;
+    darkModeBackgroundColorFull?: string;
     render?: React.ReactNode;
 }
 
-export default function IconCard({ render, backgroundColor }: IconCardProps) {
+export default function IconCard({
+    render,
+    backgroundColor,
+    darkModeBackgroundColorFull,
+}: IconCardProps) {
     return (
         <motion.div
             initial={{ y: 200, opacity: 0 }}
@@ -14,7 +19,7 @@ export default function IconCard({ render, backgroundColor }: IconCardProps) {
             viewport={{ margin: "100px" }}
             className={`bg-${
                 backgroundColor ? backgroundColor : "background-200"
-            } rounded-3xl flex items-center justify-center p-8`}
+            } ${darkModeBackgroundColorFull} rounded-3xl flex items-center justify-center p-8`}
         >
             {render}
         </motion.div>

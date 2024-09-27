@@ -2,6 +2,7 @@ import { useState } from "react";
 import TextAnim from "./TextAnim";
 import { motion } from "framer-motion";
 import { IoIosArrowDown } from "react-icons/io";
+import DarkModeSwitch from "../General/DarkModeSwitch";
 
 export default function Greeting() {
     const typingText =
@@ -19,13 +20,13 @@ export default function Greeting() {
 
     return (
         <div className="min-w-max min-h-screen text-center flex flex-col justify-between overflow-hidden">
-            <div />
+            <DarkModeSwitch />
             <TextAnim
                 text={typingText}
                 setAnimationActive={setAnimationActive}
             />
             <motion.div
-                className="flex flex-col justify-center items-center opacity-60"
+                className="flex flex-col justify-center items-center opacity-60 text-text-950"
                 key="find-out-more"
                 variants={variants}
                 transition={{ type: "spring", stiffness: 100 }}

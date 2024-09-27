@@ -132,6 +132,7 @@
 body {
     font-family: "M PLUS Code Latin";
     font-weight: 400;
+    background-color: #f3e7fe; /* Don't remove: this fixes rubber-banding (eleastic scrolling) effect on macOS and iOS browsers */
 }
 
 h1,
@@ -145,6 +146,7 @@ h5 {
 
 html {
     font-size: 100%;
+    background-color: #f3e7fe; /* Don't remove: this fixes rubber-banding (eleastic scrolling) effect on macOS and iOS browsers */
 } /* 16px */
 
 h1 {

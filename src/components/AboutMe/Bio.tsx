@@ -12,7 +12,9 @@ export default function Bio() {
             viewport={{ margin: "-100px" }}
             className="bg-secondary-500 col-span-3 row-span-2 rounded-3xl flex items-center justify-center text-center"
         >
-            <p className="p-8 text-secondary-50 text-2xl">{bioText}</p>
+            <p className="p-8 text-secondary-50 dark:text-secondary-950 text-2xl">
+                {bioText}
+            </p>
         </motion.div>
     );
 }

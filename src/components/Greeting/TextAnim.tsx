@@ -43,7 +43,7 @@ export default function TextAnim({ text, setAnimationActive }: TextAnimProps) {
     }, [text, count, rounded, handleAnimationEnd]);
 
     return (
-        <span className="text-6xl font-bold space-y-6 min-h-64 flex items-center justify-center">
+        <span className="text-6xl font-bold space-y-6 min-h-64 flex items-center justify-center text-text-900">
             <motion.span>
                 {displayText}
                 <CursorBlinker />
