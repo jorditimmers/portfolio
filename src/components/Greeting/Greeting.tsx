@@ -20,15 +20,23 @@ export default function Greeting() {
     };
 
     return (
-        <div className="relative min-h-screen flex items-center justify-center">
-            <div className="absolute inset-0 -z-0 overflow-hidden opacity-50 flex items-center justify-center">
+        <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
+            <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 0.5 }}
+                transition={{
+                    duration: 3,
+                    ease: "easeInOut",
+                }}
+                className="absolute inset-0 -z-0 overflow-hidden opacity-50 flex items-center justify-center"
+            >
                 <GrainBackground
                     width="80vw"
                     height="min(80vw, 80vh)"
                     viewBox="0 0 915 700"
                     className="blur-xl"
                 />
-            </div>
+            </motion.div>
 
             <div className="min-w-max min-h-screen text-center flex flex-col justify-between overflow-hidden relative z-10">
                 <DarkModeSwitch />
