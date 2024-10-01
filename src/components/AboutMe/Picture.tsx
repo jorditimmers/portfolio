@@ -4,7 +4,7 @@ import ProfilePicture from "./profilepicture.jpeg";
 export default function Picture() {
     return (
         <motion.div
-            initial={{ x: 300, opacity: 0 }}
+            initial={{ x: "90%", opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ type: "spring", stiffness: 50 }}
             viewport={{ margin: "-100px" }}
