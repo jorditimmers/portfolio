@@ -7,7 +7,7 @@ import GrainBackground from "./GrainBackground";
 
 export default function Greeting() {
     const typingText =
-        "Hi, i am Jordi Timmers!\n I create impactful applications.";
+        "Hi, I am Jordi Timmers!\n I create impactful applications.";
 
     const [animationActive, setAnimationActive] = useState<boolean>(true);
 
@@ -20,7 +20,7 @@ export default function Greeting() {
     };
 
     return (
-        <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div className="relative min-h-screen flex flex-col justify-between overflow-hidden">
             <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 0.5 }}
@@ -38,21 +38,26 @@ export default function Greeting() {
                 />
             </motion.div>
 
-            <div className="min-w-max min-h-screen text-center flex flex-col justify-between overflow-hidden relative z-10">
+            <div className="flex-grow flex flex-col items-center justify-center relative z-10 text-center">
                 <DarkModeSwitch />
                 <TextAnim
                     text={typingText}
                     setAnimationActive={setAnimationActive}
                 />
+            </div>
+
+            <div className="flex flex-col justify-center items-center opacity-60 text-text-950 pb-4">
                 <motion.div
-                    className="flex flex-col justify-center items-center opacity-60 text-text-950"
                     key="find-out-more"
                     variants={variants}
                     transition={{ type: "spring", stiffness: 100 }}
                     animate={animationActive ? "hidden" : "visible"}
+                    className="flex flex-col items-center"
                 >
-                    <h5 className="font-light">FIND OUT MORE</h5>
-                    <IoIosArrowDown className="size-8 mb-3" />
+                    <h5 className="font-light text-lg md:text-xl lg:text-2xl">
+                        FIND OUT MORE
+                    </h5>
+                    <IoIosArrowDown className="size-8 mb-3 w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10" />
                 </motion.div>
             </div>
         </div>

@@ -8,13 +8,13 @@ export default function GraduateCard() {
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ type: "spring", stiffness: 50 }}
             viewport={{ margin: "150px" }}
-            className="bg-secondary-200 dark:bg-secondary-800 col-span-2 row-span-2 rounded-3xl flex flex-col items-center justify-center text-secondary-900 dark:text-secondary-100"
+            className="bg-secondary-200 dark:bg-secondary-800 col-span-2 row-span-2 rounded-3xl flex flex-col items-center justify-center text-secondary-900 dark:text-secondary-100 p-6"
         >
-            <GraduateHat />
-            <h5 className="font-semibold px-2">
+            <GraduateHat className="mb-4" />
+            <h5 className="font-semibold text-xl text-center px-2">
                 Bachelor of Electronics and ICT
             </h5>
-            <h5 className="font-light px-2 pb-5">
+            <h5 className="font-light text-center px-2 pb-5">
                 (Software Development major)
             </h5>
         </motion.div>

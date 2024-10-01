@@ -16,26 +16,44 @@ export default function AboutMe() {
             <Bio />
             <Picture />
             <GraduateCard />
-            <IconCard backgroundColor="secondary-400" render={<ReactLogo />} />
             <IconCard
-                darkModeBackgroundColorFull="dark:bg-background-600"
-                backgroundColor="background-900"
-                render={<AngularLogo />}
+                backgroundColor="secondary-400"
+                render={
+                    <ReactLogo className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24" />
+                }
             />
-            <IconCard backgroundColor="secondary-400" render={<JavaLogo />} />
             <IconCard
                 darkModeBackgroundColorFull="dark:bg-background-600"
                 backgroundColor="background-900"
-                render={<SpringLogo />}
+                render={
+                    <AngularLogo className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24" />
+                }
             />
             <IconCard
                 backgroundColor="secondary-400"
-                render={<TailwindLogo />}
+                render={
+                    <JavaLogo className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24" />
+                }
+            />
+            <IconCard
+                darkModeBackgroundColorFull="dark:bg-background-600"
+                backgroundColor="background-900"
+                render={
+                    <SpringLogo className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24" />
+                }
+            />
+            <IconCard
+                backgroundColor="secondary-400"
+                render={
+                    <TailwindLogo className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24" />
+                }
             />
             <IconCard
                 backgroundColor="background-900"
                 darkModeBackgroundColorFull="dark:bg-background-600"
-                render={<AwsLogo />}
+                render={
+                    <AwsLogo className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24" />
+                }
             />
         </div>
     );

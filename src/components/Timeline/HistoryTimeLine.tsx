@@ -8,7 +8,7 @@ import HistoryTimeLineItem from "./HistoryTimeLineItem";
 
 export default function History() {
     return (
-        <div className="min-w-screen min-h-screen flex justify-center items-center">
+        <div className="min-w-screen min-h-screen flex justify-center items-center py-4">
             <div className="w-[38rem]">
                 <HistoryTimeLineItem
                     bodyText={`During my Java traineeship at Axxes, I refreshed and 
