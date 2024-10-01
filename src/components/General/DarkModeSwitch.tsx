@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { MdDarkMode, MdLightMode } from "react-icons/md";
+import { SunIcon, MoonIcon } from "@heroicons/react/24/outline";
 import useDarkSide from "../../hooks/useDarkSide";
 
 export default function Switcher() {
@@ -20,9 +20,9 @@ export default function Switcher() {
             onClick={toggleDarkMode}
         >
             {darkSide ? (
-                <MdDarkMode className="size-6 cursor-pointer fill-text-900" />
+                <MoonIcon className="size-6 cursor-pointer text-text-900" />
             ) : (
-                <MdLightMode className="size-6 cursor-pointer fill-text-900" />
+                <SunIcon className="size-6 cursor-pointer text-text-900" />
             )}
         </div>
     );
