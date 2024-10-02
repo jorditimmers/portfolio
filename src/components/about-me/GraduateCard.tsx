@@ -8,7 +8,7 @@ export default function GraduateCard() {
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ type: "spring", stiffness: 50 }}
             viewport={{ margin: "150px" }}
-            className="bg-secondary-200 dark:bg-secondary-800 col-span-2 row-span-2 rounded-3xl flex flex-col items-center justify-center text-secondary-900 dark:text-secondary-100 p-6"
+            className="bg-secondary-200 dark:bg-secondary-800 col-span-2 row-span-2 rounded-3xl flex flex-col items-center justify-center text-secondary-900 dark:text-secondary-100 p-6 shadow-md"
         >
             <GraduateHat className="mb-4" />
             <h5 className="font-semibold text-xl text-center px-2">

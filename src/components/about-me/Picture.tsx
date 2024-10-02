@@ -11,7 +11,7 @@ export default function Picture() {
             className="col-span-2 row-span-2"
         >
             <img
-                className="object-cover w-full h-full rounded-3xl aspect-4/3"
+                className="object-cover w-full h-full rounded-3xl aspect-4/3 shadow-md"
                 alt="Profile"
                 src={ProfilePicture}
             />

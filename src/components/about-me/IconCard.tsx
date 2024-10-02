@@ -19,7 +19,7 @@ export default function IconCard({
             viewport={{ margin: "100px" }}
             className={`bg-${
                 backgroundColor ? backgroundColor : "background-200"
-            } ${darkModeBackgroundColorFull} rounded-3xl flex items-center justify-center p-8 md:p-10 lg:p-12`}
+            } ${darkModeBackgroundColorFull} rounded-3xl flex items-center justify-center p-8 md:p-10 lg:p-12 shadow-md`}
         >
             {render}
         </motion.div>

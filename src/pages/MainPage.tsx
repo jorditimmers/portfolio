@@ -16,7 +16,7 @@ export default function MainPage() {
             </div>
 
             <div className="flex md:hidden flex-col justify-center items-center text-center h-screen p-6">
-                <p className="text-lg md:text-xl font-bold text-white">
+                <p className="text-lg md:text-xl font-bold text-text-900">
                     Please switch to a desktop device for the best experience.
                 </p>
             </div>
