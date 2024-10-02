@@ -5,10 +5,13 @@ import {
     UserGroupIcon,
 } from "@heroicons/react/24/outline";
 import HistoryTimeLineItem from "./HistoryTimeLineItem";
+import TextAnim from "../greeting/TextAnim";
 
 export default function History() {
     return (
-        <div className="min-w-screen min-h-screen flex justify-center items-center py-4">
+        <div className="min-w-screen flex flex-col justify-center items-center pb-32">
+            <TextAnim text={"My career so far:"} duration={3} />
+            <hr className="w-[48rem] mb-8 border-t-2 border-text-900 rounded-full opacity-20" />
             <div className="w-[38rem]">
                 <HistoryTimeLineItem
                     bodyText={`During my Java traineeship at Axxes, I refreshed and 

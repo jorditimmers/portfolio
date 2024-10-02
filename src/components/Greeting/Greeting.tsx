@@ -1,9 +1,9 @@
 import { useState } from "react";
-import TextAnim from "./TextAnim";
 import { motion } from "framer-motion";
 import { IoIosArrowDown } from "react-icons/io";
-import DarkModeSwitch from "../General/DarkModeSwitch";
+import DarkModeSwitch from "../general/DarkModeSwitch";
 import GrainBackground from "./GrainBackground";
+import TextAnim from "./TextAnim";
 
 export default function Greeting() {
     const typingText =
