@@ -1,4 +1,5 @@
 import AboutMe from "../components/about-me/AboutMe";
+import Footer from "../components/footer/Footer";
 import FloatingContact from "../components/general/FloatingContactContainer";
 import Greeting from "../components/greeting/Greeting";
 import Timeline from "../components/timeline/HistoryTimeLine";
@@ -9,8 +10,8 @@ export default function MainPage() {
             <div className="hidden md:block">
                 <Greeting />
                 <AboutMe />
-
                 <Timeline />
+                <Footer />
                 <FloatingContact />
             </div>
 

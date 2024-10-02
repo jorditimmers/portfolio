@@ -14,16 +14,14 @@ export default function History() {
             <hr className="w-[48rem] mb-8 border-t-2 border-text-900 rounded-full opacity-20" />
             <div className="w-[38rem]">
                 <HistoryTimeLineItem
-                    bodyText={`During my Java traineeship at Axxes, I refreshed and 
-                        expanded my software development skills through intensive, 
-                        hands-on training with technologies like AWS, Spring Boot, 
-                        Java, Angular, and React. I worked on developing scalable 
-                        backend services, building dynamic user interfaces, and d
-                        eploying applications on AWS, while also gaining experience 
-                        in project management and communication tools. This 
-                        omprehensive program strengthened my technical abilities and 
-                        soft skills, preparing me to effectively deliver solutions in 
-                        client-focused environments.`}
+                    bodyText={`During my Java traineeship at Axxes, I worked on improving
+                        my software development skills with hands-on training in 
+                        technologies like AWS, Spring Boot, Java, Angular, and React. 
+                        I developed backend services, created user-friendly interfaces, 
+                        and learned how to deploy applications on AWS. I also picked up 
+                        some project management and communication skills. Overall, this 
+                        program helped me become better at both technical tasks and 
+                        working with clients.`}
                     headerText={"Traineeship - Axxes"}
                     periodText={"2024"}
                     icon={<UserGroupIcon className="h-8 w-8" />}
