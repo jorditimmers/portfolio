@@ -79,7 +79,7 @@ export default function TextAnim({
 
     return (
         <span
-            className="text-6xl font-bold space-y-6 flex items-center justify-center text-text-900 my-8"
+            className="text-3xl md:text-6xl font-bold space-y-6 flex items-center justify-center text-text-900 my-8"
             ref={textRef}
         >
             <motion.span>

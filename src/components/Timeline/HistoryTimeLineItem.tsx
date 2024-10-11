@@ -44,7 +44,9 @@ export default function HistoryTimeLineItem({
                             {icon}
                         </TimelineIcon>
                         <div className="ml-3">
-                            <h4 className="text-text-900">{headerText}</h4>
+                            <h4 className="text-text-900 text-lg md:text-2xl">
+                                {headerText}
+                            </h4>
                             <p className="text-secondary-600">{periodText}</p>
                         </div>
                     </div>

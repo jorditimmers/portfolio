@@ -19,7 +19,7 @@ export default function ContactButton({ url, render }: ContactButtonProps) {
                 y: -10,
             }}
             onClick={handleClick}
-            className="p-5 m-3 rounded-full bg-secondary-400 dark:bg-secondary-800 hover:bg-secondary-500"
+            className="p-5 m-2.5 rounded-full bg-secondary-400 dark:bg-secondary-800 hover:bg-secondary-500"
         >
             {render}
         </motion.button>

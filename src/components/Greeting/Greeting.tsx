@@ -7,7 +7,7 @@ import TextAnim from "./TextAnim";
 
 export default function Greeting() {
     const typingText =
-        "Hi, I am Jordi Timmers!\n I create impactful applications.";
+        "Hi, I am Jordi Timmers!\n I create elegant applications.";
 
     const [animationActive, setAnimationActive] = useState<boolean>(true);
 
@@ -38,7 +38,7 @@ export default function Greeting() {
                 />
             </motion.div>
 
-            <div className="flex-grow flex flex-col items-center justify-center relative z-10 text-center">
+            <div className="flex-grow flex flex-col items-center justify-center relative z-10 text-center px-6">
                 <DarkModeSwitch />
                 <TextAnim
                     text={typingText}
