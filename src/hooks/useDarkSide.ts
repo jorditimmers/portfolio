@@ -28,10 +28,12 @@ export default function useDarkSide(): [
             root.classList.remove("dark");
         }
 
+        // This fixes rubber-banding (elastic scrolling) effect on macOS and iOS browsers
         document.documentElement.style.backgroundColor = isDarkSide
-            ? "#0e0118" /* Don't remove: this fixes rubber-banding (elastic scrolling) effect on macOS and iOS browsers */
-            : "#F3E7FE"; /* Don't remove: this fixes rubber-banding (elastic scrolling) effect on macOS and iOS browsers */
+            ? "#0e0118"
+            : "#F3E7FE";
 
+        //This changes the color of the address bar in Chrome mobile
         const metaThemeColor = document.querySelector(
             "meta[name='theme-color']"
         );
@@ -39,16 +41,6 @@ export default function useDarkSide(): [
             metaThemeColor.setAttribute(
                 "content",
                 isDarkSide ? "#0e0118" : "#F3E7FE"
-            );
-        }
-
-        const metaIOSStatusBar = document.querySelector(
-            "meta[name='apple-mobile-web-app-status-bar-style']"
-        );
-        if (metaIOSStatusBar) {
-            metaIOSStatusBar.setAttribute(
-                "content",
-                isDarkSide ? "black-translucent" : "default"
             );
         }
 

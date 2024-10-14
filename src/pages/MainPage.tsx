@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import AboutMe from "../components/about-me/AboutMe";
 import Footer from "../components/footer/Footer";
 import ContactInfo from "../components/general/ContactInfo";
@@ -6,18 +7,22 @@ import Greeting from "../components/greeting/Greeting";
 import Timeline from "../components/timeline/HistoryTimeLine";
 
 export default function MainPage() {
+    const aboutMeSectionRef = useRef<HTMLDivElement>(null);
+
+    const handleScroll = () => {
+        aboutMeSectionRef.current?.scrollIntoView({ behavior: "smooth" });
+    };
+
     return (
         <div className="min-h-dvh min-w-fit bg-background-50">
-            <div className="md:block">
-                <Greeting />
-                <AboutMe />
-                <Timeline />
-                <ContactInfo />
-                <Footer />
+            <Greeting onScrollClick={handleScroll} />
+            <AboutMe sectionRef={aboutMeSectionRef} />
+            <Timeline />
+            <ContactInfo />
+            <Footer />
 
-                {/* This is hidden on mobile */}
-                <FloatingContact />
-            </div>
+            {/* This is hidden on mobile */}
+            <FloatingContact />
         </div>
     );
 }

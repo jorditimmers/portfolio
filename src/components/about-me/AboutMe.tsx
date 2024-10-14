@@ -18,9 +18,16 @@ const logoComponents = [
     <AwsLogo />,
 ];
 
-export default function AboutMe() {
+interface AboutMeProps {
+    sectionRef: React.RefObject<HTMLDivElement>;
+}
+
+export default function AboutMe({ sectionRef }: AboutMeProps) {
     return (
-        <div className="min-w-full h-auto grid grid-cols-2 md:grid-cols-5 gap-6 p-6 md:p-24 overflow-hidden">
+        <div
+            className="min-w-full h-auto grid grid-cols-2 md:grid-cols-5 gap-6 p-6 pt-12 md:p-24 md:pt-12 overflow-hidden"
+            ref={sectionRef}
+        >
             <Bio />
             <Picture />
             <GraduateCard />

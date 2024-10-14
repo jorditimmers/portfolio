@@ -5,7 +5,11 @@ import DarkModeSwitch from "../general/DarkModeSwitch";
 import GrainBackground from "./GrainBackground";
 import TextAnim from "./TextAnim";
 
-export default function Greeting() {
+interface GreetingProps {
+    onScrollClick: () => void;
+}
+
+export default function Greeting({ onScrollClick }: GreetingProps) {
     const typingText =
         "Hi, I am Jordi Timmers!\n I create elegant applications.";
 
@@ -46,7 +50,10 @@ export default function Greeting() {
                 />
             </div>
 
-            <div className="flex flex-col justify-center items-center opacity-60 text-text-950 pb-20 md:pb-4">
+            <div
+                className="flex flex-col justify-center items-center opacity-60 text-text-950 pb-20 md:pb-4 hover:cursor-pointer"
+                onClick={onScrollClick}
+            >
                 <motion.div
                     key="find-out-more"
                     variants={variants}
@@ -54,10 +61,10 @@ export default function Greeting() {
                     animate={animationActive ? "hidden" : "visible"}
                     className="flex flex-col items-center"
                 >
-                    <h5 className="font-light text-lg md:text-xl lg:text-2xl">
+                    <h5 className="font-light text-lg md:text-xl">
                         FIND OUT MORE
                     </h5>
-                    <IoIosArrowDown className="size-8 mb-3 w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10" />
+                    <IoIosArrowDown className="size-8 mb-3 w-6 h-6 md:w-8 md:h-8" />
                 </motion.div>
             </div>
         </div>
