@@ -28,8 +28,28 @@ export default function useDarkSide(): [
             root.classList.remove("dark");
         }
 
+        const metaThemeColor = document.querySelector(
+            "meta[name='theme-color']"
+        );
+        if (metaThemeColor) {
+            metaThemeColor.setAttribute(
+                "content",
+                isDarkSide ? "#0e0118" : "#F3E7FE"
+            );
+        }
+
+        const metaIOSStatusBar = document.querySelector(
+            "meta[name='apple-mobile-web-app-status-bar-style']"
+        );
+        if (metaIOSStatusBar) {
+            metaIOSStatusBar.setAttribute(
+                "content",
+                isDarkSide ? "black-translucent" : "default"
+            );
+        }
+
         localStorage.setItem("theme", theme);
-    }, [theme]);
+    }, [theme, isDarkSide]);
 
     return [theme, setTheme, isDarkSide];
 }
