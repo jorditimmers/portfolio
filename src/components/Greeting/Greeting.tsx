@@ -46,7 +46,7 @@ export default function Greeting() {
                 />
             </div>
 
-            <div className="flex flex-col justify-center items-center opacity-60 text-text-950 pb-4">
+            <div className="flex flex-col justify-center items-center opacity-60 text-text-950 pb-20 md:pb-4">
                 <motion.div
                     key="find-out-more"
                     variants={variants}

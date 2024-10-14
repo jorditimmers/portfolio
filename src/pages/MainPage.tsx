@@ -7,7 +7,7 @@ import Timeline from "../components/timeline/HistoryTimeLine";
 
 export default function MainPage() {
     return (
-        <div className="min-h-screen min-w-fit bg-background-50">
+        <div className="min-h-dvh min-w-fit bg-background-50">
             <div className="md:block">
                 <Greeting />
                 <AboutMe />
