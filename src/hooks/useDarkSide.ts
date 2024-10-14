@@ -28,6 +28,10 @@ export default function useDarkSide(): [
             root.classList.remove("dark");
         }
 
+        document.documentElement.style.backgroundColor = isDarkSide
+            ? "#0e0118" /* Don't remove: this fixes rubber-banding (elastic scrolling) effect on macOS and iOS browsers */
+            : "#F3E7FE"; /* Don't remove: this fixes rubber-banding (elastic scrolling) effect on macOS and iOS browsers */
+
         const metaThemeColor = document.querySelector(
             "meta[name='theme-color']"
         );
