@@ -42,11 +42,12 @@ export default function Greeting({ onScrollClick }: GreetingProps) {
                 />
             </motion.div>
 
-            <div className="flex-grow flex flex-col items-center justify-center relative z-10 text-center px-6">
+            <div className="flex-grow flex flex-col items-center justify-center relative z-10 text-center px-6 pt-20 md:pt-6">
                 <DarkModeSwitch />
                 <TextAnim
                     text={typingText}
                     setAnimationActive={setAnimationActive}
+                    hasMinHeight={true}
                 />
             </div>
 

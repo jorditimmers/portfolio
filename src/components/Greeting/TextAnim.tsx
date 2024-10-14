@@ -6,12 +6,14 @@ interface TextAnimProps {
     text: string;
     setAnimationActive?: (active: boolean) => void;
     duration?: number;
+    hasMinHeight?: boolean;
 }
 
 export default function TextAnim({
     text,
     setAnimationActive,
     duration,
+    hasMinHeight,
 }: TextAnimProps) {
     const count = useMotionValue(0);
     const rounded = useTransform(count, (latest) => Math.round(latest));
@@ -79,7 +81,9 @@ export default function TextAnim({
 
     return (
         <span
-            className="text-3xl md:text-6xl font-bold space-y-6 flex items-center justify-center text-text-900 my-8"
+            className={`${
+                hasMinHeight === true ? "min-h-40" : ""
+            } text-3xl md:text-6xl font-bold space-y-6 flex items-center justify-center text-text-900 my-8`}
             ref={textRef}
         >
             <motion.span>

@@ -14,7 +14,7 @@ export default function MainPage() {
     };
 
     return (
-        <div className="min-h-dvh min-w-fit bg-background-50">
+        <div className="bg-background-50">
             <Greeting onScrollClick={handleScroll} />
             <AboutMe sectionRef={aboutMeSectionRef} />
             <Timeline />
