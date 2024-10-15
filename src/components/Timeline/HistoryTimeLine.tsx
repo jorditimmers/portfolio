@@ -10,7 +10,7 @@ import TextAnim from "../greeting/TextAnim";
 export default function History() {
     return (
         <div className="min-w-screen flex flex-col justify-center items-center pb-16 md:pb-32 px-6">
-            <TextAnim text={"My career so far:"} duration={3} />
+            <TextAnim text={"My journey so far:"} duration={3} />
             <hr className="w-full max-w-2xl mb-8 border-t-2 border-text-900 rounded-full opacity-20" />
             <div className="w-full max-w-lg">
                 <HistoryTimeLineItem

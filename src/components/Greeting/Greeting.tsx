@@ -11,7 +11,7 @@ interface GreetingProps {
 
 export default function Greeting({ onScrollClick }: GreetingProps) {
     const typingText =
-        "Hi, I am Jordi Timmers!\n I create elegant applications.";
+        "Hi, I am Jordi Timmers!\n I create impactful applications.";
 
     const [animationActive, setAnimationActive] = useState<boolean>(true);
 
