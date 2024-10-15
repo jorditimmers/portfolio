@@ -51,16 +51,14 @@ export default function Greeting({ onScrollClick }: GreetingProps) {
                 />
             </div>
 
-            <div
-                className="flex flex-col justify-center items-center opacity-60 text-text-950 pb-20 md:pb-4 hover:cursor-pointer"
-                onClick={onScrollClick}
-            >
+            <div className="flex flex-col justify-center items-center opacity-60 text-text-950 pb-20 md:pb-4">
                 <motion.div
                     key="find-out-more"
                     variants={variants}
                     transition={{ type: "spring", stiffness: 100 }}
                     animate={animationActive ? "hidden" : "visible"}
-                    className="flex flex-col items-center"
+                    className="flex flex-col items-center hover:cursor-pointer"
+                    onClick={onScrollClick}
                 >
                     <h5 className="font-light text-lg md:text-xl">
                         FIND OUT MORE

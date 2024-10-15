@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import ProfilePicture from "./profilepicture.jpeg";
+import { WobbleCard } from "./wobble-card";
 
 export default function Picture() {
     return (
@@ -10,11 +11,13 @@ export default function Picture() {
             viewport={{ margin: "-100px" }}
             className="col-span-2 row-span-2"
         >
-            <img
-                className="object-cover w-full h-full rounded-3xl aspect-4/3 shadow-md"
-                alt="Profile"
-                src={ProfilePicture}
-            />
+            <WobbleCard containerClassName="w-full h-full">
+                <img
+                    className="object-cover w-full h-full aspect-4/3 scale-105"
+                    alt="Profile"
+                    src={ProfilePicture}
+                />
+            </WobbleCard>
         </motion.div>
     );
 }
