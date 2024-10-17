@@ -24,6 +24,13 @@ export default function History() {
                         working with clients.`}
                     headerText={"Traineeship - Axxes"}
                     periodText={"2024"}
+                    chipItems={[
+                        "React",
+                        "Angular",
+                        "Java",
+                        "Spring Boot",
+                        "AWS",
+                    ]}
                     icon={<UserGroupIcon className="h-8 w-8" />}
                 />
                 <HistoryTimeLineItem
@@ -37,6 +44,15 @@ export default function History() {
                         provided valuable recruitment data.`}
                     headerText={"Internship - Axxes"}
                     periodText={"2024"}
+                    chipItems={[
+                        "UI/UX",
+                        "React",
+                        "Java",
+                        "Spring Boot",
+                        "AWS",
+                        "CloudFormation",
+                        "Agile",
+                    ]}
                     icon={<BookOpenIcon className="h-8 w-8" />}
                 />
                 <HistoryTimeLineItem
@@ -49,6 +65,7 @@ export default function History() {
                         the time-logging process.`}
                     headerText={"Student job - BIQS IT"}
                     periodText={"2023"}
+                    chipItems={["UI/UX", "Angular", "Java", "Spring Boot"]}
                     icon={<BriefcaseIcon className="h-8 w-8" />}
                 />
                 <HistoryTimeLineItem
@@ -63,6 +80,15 @@ export default function History() {
                     headerText={"Bachelor - AP Antwerp"}
                     periodText={"2021 - 2024"}
                     hideTimeLineConnector={true}
+                    chipItems={[
+                        "Angular",
+                        "Java",
+                        "Spring Boot",
+                        "OOP",
+                        "Project Management",
+                        "Communication",
+                        "AWS",
+                    ]}
                     icon={<AcademicCapIcon className="h-8 w-8" />}
                 />
             </div>

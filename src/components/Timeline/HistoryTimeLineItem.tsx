@@ -1,5 +1,6 @@
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
 import {
+    Chip,
     Timeline,
     TimelineBody,
     TimelineConnector,
@@ -16,6 +17,7 @@ interface HistoryTimeLineItemProps {
     headerText: string;
     periodText: string;
     hideTimeLineConnector?: boolean;
+    chipItems?: string[];
 }
 
 export default function HistoryTimeLineItem({
@@ -24,6 +26,7 @@ export default function HistoryTimeLineItem({
     headerText,
     periodText,
     hideTimeLineConnector,
+    chipItems,
 }: HistoryTimeLineItemProps) {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -68,8 +71,21 @@ export default function HistoryTimeLineItem({
                     transition={{ duration: 0.6, ease: "easeInOut" }}
                     style={{ overflow: "hidden" }}
                 >
-                    <TimelineBody className="pb-8">
+                    <TimelineBody className="pb-4">
                         <p className="text-text-900">{bodyText}</p>
+                        {chipItems && (
+                            <div className="flex flex-wrap pt-2 gap-2 pb-0">
+                                {chipItems.map((item) => (
+                                    <Chip
+                                        key={item}
+                                        value={item}
+                                        size="sm"
+                                        variant="ghost"
+                                        className="rounded-full bg-background-200 text-text-800"
+                                    ></Chip>
+                                ))}
+                            </div>
+                        )}
                     </TimelineBody>
                 </motion.div>
             </TimelineItem>
