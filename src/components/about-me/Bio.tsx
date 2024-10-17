@@ -3,7 +3,7 @@ import { WobbleCard } from "./wobble-card";
 
 export default function Bio() {
     const bioText =
-        "I am a IT Consultant passionate about designing intuitive, visually engaging user interfaces. While I specialize in front-end development, I bring full-stack capabilities to deliver seamless solutions across the board.";
+        "As a Software Consultant, I enjoy driving projects from concept to completion, working across the full stack. My real passion lies in designing intuitive, visually appealing user interfaces that deliver smooth and engaging experiences.";
 
     return (
         <motion.div
