@@ -15,7 +15,7 @@ export default function Bio() {
         >
             <WobbleCard
                 containerClassName="bg-secondary-500 w-full h-full"
-                className="p-6 md:p-8"
+                className="p-6 md:p-8 flex items-center justify-center"
             >
                 <p className="p-6 md:p-8 text-secondary-50 dark:text-secondary-950 text-2xl flex items-center justify-center text-center">
                     {bioText}
