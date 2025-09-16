@@ -1,6 +1,7 @@
 import { IoMail } from "react-icons/io5";
-import ContactButton from "./ContactButton";
 import { FaLinkedinIn } from "react-icons/fa";
+// @ts-ignore
+import ContactButton from "./ContactButton";
 
 export default function ContactInfo() {
     return (

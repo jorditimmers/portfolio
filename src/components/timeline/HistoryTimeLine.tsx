@@ -4,8 +4,9 @@ import {
     AcademicCapIcon,
     UserGroupIcon, BuildingOfficeIcon,
 } from "@heroicons/react/24/outline";
-import HistoryTimeLineItem from "./HistoryTimeLineItem";
 import TextAnim from "../greeting/TextAnim";
+// @ts-ignore
+import HistoryTimeLineItem from "./HistoryTimeLineItem";
 
 export default function History() {
     return (
