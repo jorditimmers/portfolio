@@ -15,13 +15,12 @@ export default function History() {
             <hr className="w-full max-w-2xl mb-8 border-t-2 border-text-900 rounded-full opacity-20" />
             <div className="w-full max-w-lg">
                 <HistoryTimeLineItem
-                    bodyText={`At DPG Media, I work in the team that manages the company’s payment service 
-                    provider (PSP) which we call the PPSP. This was a totally new area for me, and I’ve learned a lot while working 
-                    on this project. I’ve been using AWS extensively and have spent a lot of time improving 
-                    the PPSP and PPSP Portal. I worked on the design and user experience of the portal, as well as 
-                    adding features like showing all payment and refund details and giving stakeholders the 
-                    option to approve refunds. It’s been a mix of technical work and creating something 
-                    useful for people.`}
+                    bodyText={`At DPG Media, I’m part of the team that manages the enterprise payment 
+                    gateway. I've been heavily involved with the PPSP itself, as well as the PPSP Portal, 
+                    where I worked on both UI/UX and implementing features. The portal gives stakeholders 
+                    access to detailed payment and refund information and includes functionality like 
+                    approving refunds. Through this project, I’ve had the chance to learn about new 
+                    technologies and tools.`}
                     headerText={"DPG Media"}
                     periodText={"2025 - Current"}
                     chipItems={[
